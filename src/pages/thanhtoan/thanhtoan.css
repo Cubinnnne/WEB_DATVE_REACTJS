@@ -1,0 +1,106 @@
+.payment-container {
+    display: flex;
+    gap: 0; /* Remove gap between sections */
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.payment-methods-section, .customer-info, .price-info, .trip-info {
+    flex: 1;
+    min-width: 250px;
+    margin: 0; /* Remove any margin to align sections closely */
+}
+
+.info-section {
+    display: flex;
+    flex: 3; /* Allow more space for information sections if needed */
+}
+
+h2 {
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.payment-label {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.payment-logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+/* Customer, Trip, and Price Info Styles */
+.customer-info, .trip-info, .price-info {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.customer-info h3, .trip-info h3, .price-info h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.customer-info p, .trip-info p, .price-info p {
+    font-size: 1rem;
+    color: #000000;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+/* Price Info Styles */
+.price-info h3 {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price-info p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+/* Total Price Line */
+.price-info .total-line {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #e74c3c;
+    margin-top: 10px;
+}
+
+.info-details span{
+    font-weight: 300;
+}
